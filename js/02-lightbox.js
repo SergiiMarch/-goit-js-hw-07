@@ -14,7 +14,6 @@ const createImageItem = ({ preview, original, description }) => {
 
 const arrImages = galleryItems.map(createImageItem).join("");
 galleryEls.insertAdjacentHTML("beforeend", arrImages);
-console.log(galleryEls);
 
 galleryEls.addEventListener("click", (event) => {
   event.preventDefault();
